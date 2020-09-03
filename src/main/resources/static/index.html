@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- USING BOOTSTRAP 4 -->
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </nav>
+
+    <title>Student Portal</title>
+
+</head>
+
+<!-- We use the onload on the body as our event that calls our initialize() js function that activates all of our necessary functions -->
+<body class="containter" onload="initialize()">
+    <h2 class="text-center">Our Students</h2>
+    <!-- <h2>Create A Student</h2> -->
+
+    <!-- This div of id = modals is where all the modals can be written to.  Location of the Modal HTML itself does not matter in this case -->
+    <div id ="modals" style="text-align: center; padding-top:0.75%"></div>
+
+    <!-- class="d-flex row" -->
+
+    <!-- Page Content Below -->
+    <div id="pageLayout" style="padding-top: 2%; padding-left:5%" style="text-align:center">
+        <!-- Cards Displayed on Left -->
+        <div class="card-columns" id="students">
+            <!-- The div with id=students is where we write all of our student cards dynamically with js -->
+            <!-- <div class="text-center" id="students"></div> -->
+        </div>
+
+    </div>
+
+</body>
+
+</html>
